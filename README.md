@@ -3,6 +3,7 @@
 ExpenseTracker is a modern **group expense management web application** that helps users
 track shared expenses, calculate balances, and settle payments easily.
 It also uses **AI-powered features** to generate summaries and explain settlements.
+#Live Demo->https://expense-tracker-sage-ten-96.vercel.app/
 
 ---
 
