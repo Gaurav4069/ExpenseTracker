@@ -21,7 +21,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://splitease-wmb5.onrender.com",
+      "https://expense-tracker-sage-ten-96.vercel.app/",
     ],
     credentials: true,
   })
