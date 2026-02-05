@@ -35,7 +35,7 @@ const Settlement = () => {
         border border-white/10
         bg-white/[0.02]
         backdrop-blur-2xl
-        px-6 py-6
+        px-5 sm:px-6 py-6
       "
     >
       {/* subtle glow */}
@@ -91,12 +91,18 @@ const Settlement = () => {
               mt-6 rounded-2xl
               border border-indigo-500/20
               bg-indigo-500/[0.08]
-              px-5 py-4
+              px-4 sm:px-5 py-4
             "
           >
-            {/* AI HEADER */}
-            <div className="mb-3 flex items-center justify-between">
-              <p className="text-xs font-semibold tracking-[0.35em] text-indigo-300">
+            {/* AI HEADER (RESPONSIVE FIX) */}
+            <div
+              className="
+                mb-4
+                flex flex-col gap-3
+                sm:flex-row sm:items-center sm:justify-between
+              "
+            >
+              <p className="text-xs font-semibold tracking-[0.3em] text-indigo-300">
                 AI EXPLANATION
               </p>
 
@@ -104,7 +110,8 @@ const Settlement = () => {
                 onClick={handleExplain}
                 disabled={loading}
                 className="
-                  rounded-full px-4 py-1.5
+                  w-full sm:w-auto
+                  rounded-full px-4 py-2
                   text-xs font-semibold
                   text-indigo-300
                   border border-indigo-500/30
