@@ -21,9 +21,12 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://expense-tracker-sage-ten-96.vercel.app/",
+      "http://localhost:5173",
+      "https://expense-tracker-sage-ten-96.vercel.app"
     ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
