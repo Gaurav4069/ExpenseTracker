@@ -104,9 +104,9 @@ const Login = () => {
         {/* Footer */}
         <p className="mt-6 text-center text-sm text-gray-400">
           Don’t have an account?{" "}
-          <span className="text-white cursor-pointer hover:underline">
+          <Link className="text-white hover:underline" to="/register">
             Register
-          </span>
+          </Link>
         </p>
       </motion.div>
     </div>
